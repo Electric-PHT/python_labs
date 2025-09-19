@@ -1,14 +1,14 @@
 # python_labs
 
-##Лабораторная 1
+## Лабораторная 1
 
-###Задание 1 (greeting)
+### Задание 1 (greeting)
 ```python
 print('Привет,', input('Имя: ') + '!', 'Через год тебе будет', str(int(input('Возраст '))+1) + '.')
 ```
 ![Изображение терминала](./images/lab01/01.png)
 
-###Задание 2 (sum_avg)
+### Задание 2 (sum_avg)
 ```python
 a = float(input('a: ').replace(',','.'))
 b = float(input('b: ').replace(',','.'))
@@ -16,7 +16,7 @@ print('sum=' + '{:.2f}'.format(a+b) + ';', 'sum=' + '{:.2f}'.format((a+b)/2))
 ```
 ![Изображение терминала](./images/lab01/02.png)
 
-###Задание 3 (discount_vat)
+### Задание 3 (discount_vat)
 ```python
 price = float(input('Цена: '))
 discount = float(input('Скидка: '))
@@ -33,14 +33,14 @@ print('Итого к оплате:   ', '{:.2f}'.format(total), '₽')
 ```
 ![Изображение терминала](./images/lab01/03.png)
 
-###Задание 4 (minutes_to_hhmm)
+### Задание 4 (minutes_to_hhmm)
 ```python
 minutes = int(input('Минуты: '))
 print(str(minutes//60) + ':' + str(minutes - minutes//60*60))
 ```
 ![Изображение терминала](./images/lab01/04.png)
 
-###Задание 5 (initials_and_len)
+### Задание 5 (initials_and_len)
 ```python
 name = input('ФИО: ').split()
 print('Инициалы:', name[0][0] + name[1][0] + name[2][0])
@@ -48,9 +48,9 @@ print('Длина (символов):', (len(name[0] + name[1] + name[2])+2))
 ```
 ![Изображение терминала](./images/lab01/05.png)
 
-##Лабораторная 2
+## Лабораторная 2
 
-###Задание 1 (arrays)
+### Задание 1 (arrays)
 ```pyhton
 def min_max(orig):
     if orig == []: return ValueError
@@ -70,7 +70,7 @@ def flatten(orig):
 ```
 ![Работа функций](./images/lab02/01.png)
 
-###Задание 2 (matrix)
+### Задание 2 (matrix)
 ```pyhton
 def checkmatrix(matrix):
     for i in matrix:
@@ -90,7 +90,7 @@ def col_sums(orig):
 ```
 ![Работа функций](./images/lab02/02.png)
 
-###Задание 3 (tuples)
+### Задание 3 (tuples)
 ```pyhton
 def reformat(orig):
     if type(orig[0]) != str: return ValueError
